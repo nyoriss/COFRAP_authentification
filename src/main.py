@@ -1,8 +1,9 @@
-import Authentificator
+import password_manager
+import mfa_manager
 
 def main():
-    print(Authentificator.generatePassWordFor("Test"))
-    print("BONJOUR")
+    print(password_manager.generatePasswordFor("Test"))
+    print(mfa_manager.generate2FAFor("Test"))
 
 main()
 
