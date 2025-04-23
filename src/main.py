@@ -6,4 +6,3 @@ def main():
     print(mfa_manager.generate2FAFor("Test"))
 
 main()
-

@@ -1,12 +1,6 @@
 import authentificator
-import string
 import random
-import qr_code_manager
 
-lettersList = string.ascii_letters
-digitList = ["2", "3", "4", "5", "6", "7", "8", "9"]
-punctuationList = ["!", "#", "%", "+", ":", "=", "?", "@"]
-# 
 
 def generatePasswordFor(user):
     password = ""
@@ -27,5 +21,3 @@ def passwordSwitch(character):
         3: authentificator.getRandomPunctuation()
     }
     return switch.get(character, "Invalid")
-
-

@@ -6,7 +6,7 @@ import qr_code_manager
 lettersList = string.ascii_letters
 digitList = ["2", "3", "4", "5", "6", "7", "8", "9"]
 punctuationList = ["!", "#", "%", "+", ":", "=", "?", "@"]
-# 
+
 
 def getRandomAsciiLetter():
     randomLetter = random.randint(0, len(lettersList)-1)

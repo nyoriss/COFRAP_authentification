@@ -2,9 +2,6 @@ import authentificator
 import random
 
 
-digitList = authentificator.digitList
-lettersList = authentificator.lettersList
-
 def generate2FAFor(user):
     token = ""
 
