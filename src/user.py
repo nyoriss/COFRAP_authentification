@@ -7,7 +7,7 @@ class User:
     password = ""
     expirationTime = relativedelta(months=6)
 
-    def __init__(self, username, password, passwordDate, token, tokenDate):
+    def __init__(self, username, password = "", passwordDate = "", token = "", tokenDate = ""):
         self.username = username
         self.password = password
         self.passwordDate = passwordDate
@@ -27,5 +27,5 @@ class User:
         
 
     def printAll(self):
-        return self.username + " " + self.password  + " " + str(self.passwordDate) + " " + self.token  + " " + str(self.tokenDate)
+        return "Username : " + self.username + " \nPassword : " + self.password  + "\nPassword GenDate : " + str(self.passwordDate) + "\nPassword ExpDate : " + str(self.passwordDate + self.expirationTime) + "\nToken :  " + self.token  + "\nToken GenDate : " + str(self.tokenDate) + "\nToken ExpDate : " + str(self.tokenDate + self.expirationTime)
       
