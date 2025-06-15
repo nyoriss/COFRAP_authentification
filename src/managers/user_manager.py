@@ -1,6 +1,6 @@
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-import encrypt_manager
+import managers.encrypt_manager as encrypt_manager
 
 class User:
 

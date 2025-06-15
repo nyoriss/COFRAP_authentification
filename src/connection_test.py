@@ -1,8 +1,8 @@
-import password_manager
-import connection_manager
-import encrypt_manager
-import mfa_manager
-import user
+import managers.password_manager as password_manager
+import managers.connection_manager as connection_manager
+import managers.encrypt_manager as encrypt_manager
+import managers.mfa_manager as mfa_manager
+import managers.user_manager as user_manager
 
 from datetime import datetime
 from datetime import timedelta
@@ -18,7 +18,7 @@ def main():
     test_connection_KO_expired()
 
 def test_connection_OK():
-    userOK = user.User("userOK")
+    userOK = user_manager.User("userOK")
 
     userOK.setPassword(password_manager.generatePasswordFor("userOK"), datetime.now())
     userOK.setToken(mfa_manager.generate2FAFor("userOK"), datetime.now())
@@ -36,7 +36,7 @@ def test_connection_OK():
 
 
 def test_connection_KO_expired():
-    userKO = user.User("userKO")
+    userKO = user_manager.User("userKO")
 
     year = timedelta(days=365)
 

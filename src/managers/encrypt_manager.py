@@ -10,8 +10,3 @@ def decryptString(stringToDecrypt):
     decipheredString = cryptocode.decrypt(stringToDecrypt, passkey)
     return decipheredString
 
-#encrypted = encryptString("test")
-#print(encrypted)
-#encrypted = encryptString("test")
-#print(encrypted)
-#print(decryptString(encrypted))

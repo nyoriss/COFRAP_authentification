@@ -1,7 +1,7 @@
 import string
 import random
 
-import qr_code_manager
+import managers.qr_code_manager as qr_code_manager
 
 lettersList = string.ascii_letters
 digitList = ["2", "3", "4", "5", "6", "7", "8", "9"]
